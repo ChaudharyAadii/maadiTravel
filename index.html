@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <!-- <style>o
+    
+
+  </style> -->
+  <title>Document</title>
+</head>
+
+<body class="body">
+  <div class="heading">
+    <h1>&nbsp;</h1>
+  </div>
+  <div class="navigation-bar">
+    <a href="index.html" id="SiteLogo" class="home"><img src="./imgs/SiteLogo.png" width="41px"
+        alt="Home"></img></a>
+    <!-- <div class="dropdown">
+      <button class="dropbtn"><img src="menubutton.png" width="34px" alt="Dropdown"></button>
+      <div class="dropdown-content">
+        <div><a href="#">Level 1</a></div>
+        <div><a href="#">Level 2</a></div>
+        <div><a href="#">Level 3</a></div>
+        <div><a href="#">Level 4</a></div>
+      </div>
+    </div> -->
+    <div class="navigation-bar-2">
+      <a href="#packages">Packages</a>
+      <a href="contact.html">Contact</a>
+      <a href="about.html">About</a>
+      <a href="https://www.google.com/">GOOGLE</a>
+    </div>
+  </div>
+  <div id="logo">
+    <img id="SiteLogo2" src="./imgs/SiteLogo.png" alt="Ma" width="200px" id="iii">
+  </div>
+  <div class="Explore">
+    <h3>Explore what you love...!</h3>
+  </div>
+  <div class="Go">
+    <!-- <img id="ashoka-chkra" src="./imgs/ashoka chakra.png" width="50px"> -->
+    <h3>&nbsp; &nbsp; Go where &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; you want...!</h3>
+  </div>
+  <div class="Do">
+    <h3>Do what you want...!</h3>
+  </div>
+  <!-- <div>
+    <img id="plane" src="plane.png" alt="plane" width="200px">
+  </div> -->
+  <div>
+    <h1>&nbsp;</h1>
+  </div>
+
+  <div class="images1">
+    <img id="img1" src="./imgs/1.jpg" width="250px" alt="img1">
+    <!-- <div class="sisters"><h1>7 Sisters</h1></div> -->
+    <img id="img2" src="./imgs/2.jpg" width="250px" alt="img2">
+  </div>
+  <div class="images2">
+    <img id="img3" src="./imgs/3.jpg" alt="img3" width="250px">
+    <img id="img4" src="./imgs/4.jpg" alt="img4" width="250px">
+  </div>
+  <div class="start">
+    <a href="getStarted.html"><button id="start1">Get Started</button></a>
+  </div>
+  <div>
+    <img id="travel_van" src="./imgs/travel_van.png" alt="travel_van" width="200px">
+  </div>
+  <footer class="footer">
+    <a href="https://www.instagram.com/aadi.chaudhary._/"><img src="./imgs/insta_logo-removebg-preview.png" alt="insta"
+        width="30px"></a>
+    <a href="https://www.linkedin.com/in/aditya-chaudhary-73a7b2226"><img src="./imgs/lkin_logo-removebg-preview (1).png"
+        alt="linkedin" width="30px"></a>
+    <a href="#"></a><img src="./imgs/gthub_logo-removebg-preview-removebg-preview.png" alt="github" width="30px"></a>
+    <p>Phone : +917906259764</p>
+    <p>chaudharyaditya1232@gmail.com</p>
+    <div class="first">
+      <p>Time : <span id="time"></span></p>
+      <script>
+        let a
+        let date
+        let time
+        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        setInterval(() => {
+          a = new Date()
+          time = a.getHours() + ":" + a.getMinutes() + ":" + a.getSeconds()
+          date = a.toLocaleDateString(undefined, options)
+          document.getElementById("time").innerHTML = time + ", " + date;
+        }, 1000);
+      </script>
+    </div>
+  </footer>
+
+</body>
+
+</html>

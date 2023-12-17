@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="uttarPradesh.css">
+    <title>Document</title>
+    <script type="text/javascript">
+        function gotopage(selval) {
+            var value = selval.options[selval.selectedIndex].value;
+            window.location.href = value;
+        }
+    </script>
+</head>
+
+<body>
+    <div class="navigation-bar">
+        <a href="../index.html" id="SiteLogo" class="home"><img src="SiteLogo.png" width="41px" alt="Home"></img></a>
+        <div class="navigation-bar-2">
+            <a href="#packages">Packages</a>
+            <a href="../contact.html">Contact</a>
+            <a href="../about.html">About</a>
+            <a href="https://www.google.com/">GOOGLE</a>
+        </div>
+    </div>
+    
+
+    <div class="heading">
+        <h1>Manipur</h1>
+    </div>
+
+    <div class="selectDiv">
+        <select class="select" placeholder="SLECT A DISTRICT" onchange="location = this.value;">
+            <option value="" disabled selected hidden>SELECT A DISTRICT</option>
+            <option value="mathura.html">MATHURA</option>
+            <option value="prayagraj.html">PRAYAGRAJ</option>
+            <option value="varanasi.html">VARANASI</option>
+            <option value="lucknow.html">LUCKNOW</option>
+            <option value="ayodhya.html">AYODHYA</option>
+            <option value="pilibhit.html">PILIBHIT</option>
+            <!-- <option value="about.html">MSN</option> -->
+        </select>
+    </div>
+    <div class="main">
+        <div class="d1"></div>
+        <div class="d2"></div>
+        <div class="d3"></div>
+        <div class="d4"></div>
+    </div>
+    
+</body>
+
+</html>

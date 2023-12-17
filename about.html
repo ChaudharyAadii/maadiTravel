@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="about.css">
+    <!-- <link rel="stylesheet" href="maddiTravel.css"> -->
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="navigation-bar">
+        <a href="index.html" id="SiteLogo" class="home"><img src="./imgs/SiteLogo.png" width="41px"
+            alt="Home"></img></a>
+        <!-- <div class="dropdown">
+          <button class="dropbtn"><img src="menubutton.png" width="34px" alt="Dropdown"></button>
+          <div class="dropdown-content">
+            <div><a href="#">Level 1</a></div>
+            <div><a href="#">Level 2</a></div>
+            <div><a href="#">Level 3</a></div>
+            <div><a href="#">Level 4</a></div>
+          </div>
+        </div> -->
+        <div class="navigation-bar-2">
+          <a href="#packages">Packages</a>
+          <a href="contact.html">Contact</a>
+          <a href="about.html">About</a>
+          <a href="https://www.google.com/">GOOGLE</a>
+        </div>
+      </div>
+    <div class="background">
+        <div class="blur">
+            <div id="div1">
+                <p># This is basically a site for those who want to travel throughout <a
+                        href="https://en.wikipedia.org/wiki/India"><b id="ind">INDIA</b></a> without any
+                    inconvenience.
+                </p>
+            </div>
+            <div style="text-align: right;" id="div2">
+                <p># So now whenever wherever you go, you don't feel any inconvenience.</p>
+            </div>
+            <div id="div3">
+                <p># Here you can even write your experiences about your journey of places you travelled.</p>
+            </div>
+            <div style="text-align: right;" id="div4">
+                <p># You just need to come and go through this site and get all set for your trip.</p>
+            </div>
+            <!-- <div class="footer">
+                <p>get help if any through : <strong>chaudharyaditya1232@gmail.com</strong> or
+                    <strong>7906259764</strong> or through.</p>
+                <a href="https://www.instagram.com/aadi.chaudhary._/"><img src="insta_logo-removebg-preview.png"
+                        alt="insta" width="30px"></a>
+                <a href="https://www.linkedin.com/in/aditya-chaudhary-73a7b2226"><img
+                        src="lkin_logo-removebg-preview (1).png" alt="linkedin" width="30px"></a>
+                <a href="#"></a><img src="gthub_logo-removebg-preview-removebg-preview.png" alt="github"
+                    width="30px"></a>
+            </div> -->
+
+            
+        </div>
+    </div>
+    <footer class="footer">
+        <a href="https://www.instagram.com/aadi.chaudhary._/"><img src="./imgs/insta_logo-removebg-preview.png" alt="insta"
+            width="30px"></a>
+        <a href="https://www.linkedin.com/in/aditya-chaudhary-73a7b2226"><img src="./imgs/lkin_logo-removebg-preview (1).png"
+            alt="linkedin" width="30px"></a>
+        <a href="#"></a><img src="./imgs/gthub_logo-removebg-preview-removebg-preview.png" alt="github" width="30px"></a>
+        <p>Phone : +917906259764</p>
+        <p>chaudharyaditya1232@gmail.com</p>
+        <div class="first">
+          <p>Time : <span id="time"></span></p>
+          <script>
+            let a
+            let date
+            let time
+            const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            setInterval(() => {
+              a = new Date()
+              time = a.getHours() + ":" + a.getMinutes() + ":" + a.getSeconds()
+              date = a.toLocaleDateString(undefined, options)
+              document.getElementById("time").innerHTML = time + ", " + date;
+            }, 1000);
+          </script>
+        </div>
+      </footer>
+</body>
+
+</html>
